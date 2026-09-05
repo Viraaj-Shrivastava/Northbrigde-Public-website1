@@ -57,3 +57,7 @@ If the host requires an output directory, run `npm run build` and publish the ge
 ## Responsive and accessibility notes
 
 The layout uses fluid containers, flexible grids, wrapping controls, break-safe email links, and mobile navigation designed to stay inside the viewport. It also includes skip links, semantic landmarks, keyboard focus styles, active-page navigation states, descriptive page titles, and reduced-motion support.
+
+## Vercel configuration
+
+Upload `vercel.json` alongside `package.json` in the repository root. It selects the Other framework preset, runs `npm run build`, and publishes `dist`. Keep the Vercel Root Directory at the repository root when these files are at the top level. Commit the updated files to trigger a new deployment.
