@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Northbridge">
+  <rect width="64" height="64" rx="32" fill="#071e2d"/>
+  <path d="M15 43V34c0-9.4 7.6-17 17-17s17 7.6 17 17v9" fill="none" stroke="#d8bd82" stroke-width="3" stroke-linecap="round"/>
+  <path d="M12 43h40M19 43v-9M45 43v-9" fill="none" stroke="#fffdf8" stroke-width="3" stroke-linecap="round"/>
+</svg>
