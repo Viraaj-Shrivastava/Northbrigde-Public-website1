@@ -3,7 +3,7 @@ import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
-const pages = ['index.html', 'platform.html', 'solutions.html', 'ai.html', 'company.html', 'about.html', 'contact.html'];
+const pages = ['index.html', 'platform.html', 'solutions.html', 'ai.html', 'pricing.html', 'company.html', 'about.html', 'contact.html'];
 const titles = new Set();
 const errors = [];
 

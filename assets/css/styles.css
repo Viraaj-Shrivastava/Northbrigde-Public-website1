@@ -1589,7 +1589,7 @@ p:last-child {
   .desktop-nav {
     display: grid;
     grid-column: 1 / -1;
-    grid-template-columns: repeat(7, minmax(0, 1fr));
+    grid-template-columns: repeat(8, minmax(0, 1fr));
     width: 100%;
     gap: 0.2rem;
     padding-top: 0.55rem;
@@ -1844,3 +1844,32 @@ p:last-child {
 /* Allow long headings and flex/grid children to fit narrow viewports. */
 h1, h2, h3, p, a { overflow-wrap: anywhere; }
 section, .split > *, .page-hero-grid > *, .section-head > * { min-width: 0; }
+
+/* Pricing: shared Northbridge palette and type. */
+.nb-pricing { padding-block: clamp(3.5rem, 6vw, 6rem); border-bottom: 1px solid var(--line); }
+.nb-pricing .page-title { max-width: 18ch; margin-bottom: 1.4rem; }
+.nb-pricing-lede { max-width: 48rem; }
+.nb-pricing-note { display: inline-block; margin-block: 1.5rem 2.5rem; border: 1px solid var(--gold-light); border-radius: 999px; background: var(--paper); color: var(--navy-muted); padding: .5rem 1rem; font-size: .875rem; }
+.nb-pricing-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; align-items: stretch; }
+.nb-price-card { min-width: 0; display: flex; flex-direction: column; border: 1px solid var(--line); border-radius: var(--radius-lg); background: var(--paper); padding: clamp(1.4rem, 2.8vw, 2.5rem); }
+.nb-price-card.mid { background: var(--navy); color: var(--paper); border-color: var(--navy); box-shadow: var(--shadow); }
+.nb-price-card h2 { margin: 0 0 1.5rem; font-family: var(--serif); font-weight: 500; font-size: 1.8rem; line-height: 1.2; }
+.nb-price-card .nb-amount { font-family: var(--serif); font-size: clamp(2.5rem, 4vw, 3.7rem); letter-spacing: -.035em; line-height: 1.1; margin-bottom: .65rem; }
+.nb-price-card .nb-period { font-size: .875rem; color: var(--navy-muted); margin-bottom: 2rem; }
+.nb-price-card ul { list-style: none; padding: 0; margin: 0; flex: 1; }
+.nb-price-card li { position: relative; padding: .85rem 0 .85rem 1.25rem; border-top: 1px solid var(--line); color: var(--navy-muted); font-size: 1rem; }
+.nb-price-card li::before { content: "–"; position: absolute; left: 0; color: var(--gold); }
+.nb-price-card.mid li { border-color: var(--line-light); }
+.nb-price-card.mid li, .nb-price-card.mid .nb-period { color: rgba(255,253,248,.8); }
+.nb-price-card.mid li::before { color: var(--gold-light); }
+.nb-price-card .nb-cta { margin-top: 2rem; width: 100%; font-size: .875rem; }
+.nb-price-card.mid .nb-cta { background: var(--gold-light); color: var(--navy); }
+.nb-price-card.mid .nb-cta:hover { background: var(--paper); }
+/* Make room for all eight navigation links. */
+@media (min-width: 62.001rem) {
+ .nav-row { grid-template-columns: auto minmax(0, 1fr) auto; gap: 1rem; }
+ .desktop-nav { gap: clamp(.65rem, 1.1vw, 1.1rem); flex-wrap: wrap; }
+ .desktop-nav a { white-space: nowrap; }
+ .nav-cta { max-width: 11rem; }
+}
+@media (max-width: 54rem) { .nb-pricing-grid { grid-template-columns: minmax(0, 1fr); } }
