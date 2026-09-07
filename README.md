@@ -1,12 +1,15 @@
-# Northbridge website with Pricing
+# Northbridge — Lighter Animated GitHub Build
 
-Upload the CONTENTS of github-ready/ to the root of your existing GitHub website repository, retaining assets/ and scripts/. Replace matching files. Pricing is added to all page navigation and footers.
+Upload all files in this folder to the root of your GitHub website repo.
 
-Vercel: the included build configuration generates all eight pages, including pricing.html.
-GitHub Pages: publish the repository root; all pages also work directly without a build.
-
-The separate pricing.html is self-contained (styles and logo embedded). Place it beside index.html and contact.html. Upload the complete package to add Pricing navigation on other pages too.
-
-Starter is updated to ₹30,000+ per month and Growth to ₹45,000+ per month. All other pricing wording and values are preserved. The three contact links use contact.html instead of /contact.html to reach the same Contact page under a GitHub project subdirectory.
-
-Local preview: `npm run dev`. Build: `npm run build`. Validate: `npm run validate`.
+Changes:
+- dashboard demo uses the fictional name Jack
+- dashboard floats and moves gently like the early prototype
+- animated chart tracking dot
+- animated scan line and product glow
+- brighter / lighter dark palette
+- more cyan, blue, violet, green and amber accents
+- Viraaj is CTO / COO
+- team emails included
+- favicon files included
+- pricing remains Starter ₹25,000+ / Growth ₹50,000+ / Enterprise Custom
