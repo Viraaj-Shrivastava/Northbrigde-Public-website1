@@ -1,30 +1,70 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Pricing — Northbridge</title><link rel="stylesheet" href="styles.css"><link rel="icon" href="favicon.ico">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-<link rel="manifest" href="site.webmanifest">
-</head><body>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pricing — Northbridge</title>
+<meta name="description" content="Northbridge is priced around your company, not a per-seat tier. Tell us how your team operates and we'll scope a plan around it.">
+<meta name="theme-color" content="#0F0F11">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<input type="checkbox" id="menu-toggle">
 
-<div class="nav">
-  <a class="brand" href="index.html">NORTH<b>BRIDGE</b></a>
-  <div class="navlinks">
-    <a href="index.html#platform">Platform</a>
-    <a href="ai.html">AI</a>
-    <a href="pricing.html">Pricing</a>
-    <a href="company.html">Company</a>
-    <a href="contact.html">Contact</a>
-    <a class="nav-cta" href="contact.html">Request a demo</a>
+<div class="bg-fx" aria-hidden="true"><div class="orb orb-a"></div><div class="orb orb-b"></div></div>
+<div class="grid-overlay" aria-hidden="true"></div>
+<header class="nav">
+  <div class="wrap nav-row">
+    <a href="index.html" class="wordmark">
+      <svg width="30" height="30" viewBox="0 0 128 128" fill="none" aria-hidden="true">
+        <rect width="128" height="128" rx="28" fill="#121214"></rect>
+        <rect x="30" y="40" width="13" height="54" rx="6.5" fill="#C9FF4D"></rect>
+        <rect x="85" y="40" width="13" height="54" rx="6.5" fill="#C9FF4D"></rect>
+        <rect x="26" y="88" width="76" height="11" rx="5.5" fill="#C9FF4D"></rect>
+        <path d="M37 46C37 30 50 20 64 20C78 20 91 30 91 46" stroke="#C9FF4D" stroke-width="10" stroke-linecap="round"></path>
+        <circle cx="64" cy="20" r="7.5" fill="#FF3EA5"></circle>
+      </svg>
+      NORTHBRIDGE
+    </a>
+    <nav class="links" id="navLinks">
+      <a href="platform.html">Platform</a>
+      <a href="ai.html">AI</a>
+      <a href="pricing.html" class="active" aria-current="page">Pricing</a>
+      <a href="company.html">Company</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <a href="contact.html" class="btn btn-accent">Request a Demo</a>
+      <label class="burger" for="menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></label>
+    </div>
   </div>
-</div>
-<section class="pagehero"><div class="shell"><div class="kicker">Pricing</div><h1>Straightforward pricing,<br><span class="gradient">locked in early.</span></h1><p>Pricing scales with company size, not per-seat headcount — because the value is company-wide visibility, not one more login. Founding partners keep their rate as we grow.</p></div></section>
-<section class="section" style="padding-top:20px"><div class="shell"><span class="note">Founding partner pricing — limited seats</span><div class="pricing reveal">
-<article class="price"><h3>Starter</h3><div class="amount">₹25,000+</div><div class="period">per month · up to 25 people</div><ul><li>Structure, roles & permissions</li><li>Projects & workflows</li><li>Operational dashboards</li></ul><a href="contact.html" class="btn">Talk to the team</a></article>
-<article class="price mid"><h3>Growth</h3><div class="amount">₹50,000+</div><div class="period">per month · up to 75 people</div><ul><li>Everything in Starter</li><li>Custom workflow configuration</li><li>Priority onboarding support</li><li>Early access to Northbridge AI</li></ul><a href="contact.html" class="btn primary">Talk to the team</a></article>
-<article class="price"><h3>Enterprise</h3><div class="amount">Custom</div><div class="period">75+ people or multi-site</div><ul><li>Everything in Growth</li><li>Dedicated implementation</li><li>Custom security & reporting needs</li></ul><a href="contact.html" class="btn">Talk to the team</a></article>
-</div></div></section>
-<footer><div class="shell foot">
-<div>© 2026 Northbridge</div>
-<div>Software should fit the company. Not the other way around.</div>
-</div></footer>
+</header>
+
+<main>
+  <section class="page-head" style="border-top:none; border-bottom:none;">
+    <div class="wrap">
+      <p class="eyebrow"><span class="dot"></span>Pricing</p>
+      <h1>Priced around your company, not a seat count.</h1>
+      <div class="pricing-panel">
+        <p class="measure" style="font-size:1rem;">We're early, and every company we work with configures Northbridge differently &mdash; departments, workflows, approval chains. Tell us how your team operates and we'll scope a plan around it, not a generic tier.</p>
+        <div style="display:flex; flex-direction:column; gap:.6rem; align-items:flex-start;">
+          <a href="contact.html" class="btn btn-outline">Talk Pricing</a>
+          <span class="p-note">NO SEAT GIMMICKS &mdash; SCOPED PER COMPANY</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="finerow wrap" style="border-top:1px solid var(--line); margin-top:0;">
+  <span class="fine">&copy; 2026 Northbridge. Built by two people who got tired of bad internal tools.</span>
+  <nav>
+        <a href="platform.html">Platform</a>
+        <a href="ai.html">AI</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="company.html">Company</a>
+        <a href="contact.html">Contact</a>
+  </nav>
+</footer>
 <script src="script.js"></script>
-</body></html>
+</body>
+</html>

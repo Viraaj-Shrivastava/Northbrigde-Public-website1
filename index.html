@@ -2,190 +2,116 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Northbridge — Company Operating System</title>
-<meta name="description" content="Northbridge helps companies run projects, people, workflows, approvals and company intelligence in one configurable workspace.">
+<meta name="description" content="Northbridge unifies projects, people, workflows, approvals and documents into one workspace, configured around how your company already runs.">
+<meta name="theme-color" content="#0F0F11">
 <link rel="stylesheet" href="styles.css">
-<link rel="icon" href="favicon.ico">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-<link rel="manifest" href="site.webmanifest">
 </head>
 <body>
-<div class="nav">
-  <a class="brand" href="index.html">NORTHBRIDGE</a>
-  <div class="navlinks">
-    <a href="#platform">Platform</a>
-    <a href="ai.html">AI</a>
-    <a href="pricing.html">Pricing</a>
-    <a href="company.html">Company</a>
-    <a href="contact.html">Contact</a>
-    <a class="nav-cta" href="contact.html">Request a demo</a>
-  </div>
-</div>
+<input type="checkbox" id="menu-toggle">
 
-<section class="nb-hero-original">
-  <div class="nb-motion-grid"></div>
-  <div class="nb-beam beam-a"></div>
-  <div class="nb-beam beam-b"></div>
-  <div class="nb-beam beam-c"></div>
-  <div class="shell nb-hero-layout">
-    <div class="nb-hero-copy">
-      <div class="badge"><i></i> Built for how companies actually operate</div>
-      <h1>Run the company.<br><span class="gradient">See what matters.</span></h1>
-      <p>Northbridge brings projects, people, workflows, approvals, documents and company intelligence into one configurable workspace.</p>
-      <div class="actions">
-        <a class="btn primary" href="contact.html">Request a demo</a>
-        <a class="btn" href="#platform">See the platform</a>
-      </div>
-      <div class="nb-proof-row">
-        <span>Role-based access</span>
-        <span>Configurable workflows</span>
-        <span>Permission-aware AI</span>
-      </div>
+<div class="bg-fx" aria-hidden="true"><div class="orb orb-a"></div><div class="orb orb-b"></div></div>
+<div class="grid-overlay" aria-hidden="true"></div>
+<header class="nav">
+  <div class="wrap nav-row">
+    <a href="index.html" class="wordmark">
+      <svg width="30" height="30" viewBox="0 0 128 128" fill="none" aria-hidden="true">
+        <rect width="128" height="128" rx="28" fill="#121214"></rect>
+        <rect x="30" y="40" width="13" height="54" rx="6.5" fill="#C9FF4D"></rect>
+        <rect x="85" y="40" width="13" height="54" rx="6.5" fill="#C9FF4D"></rect>
+        <rect x="26" y="88" width="76" height="11" rx="5.5" fill="#C9FF4D"></rect>
+        <path d="M37 46C37 30 50 20 64 20C78 20 91 30 91 46" stroke="#C9FF4D" stroke-width="10" stroke-linecap="round"></path>
+        <circle cx="64" cy="20" r="7.5" fill="#FF3EA5"></circle>
+      </svg>
+      NORTHBRIDGE
+    </a>
+    <nav class="links" id="navLinks">
+      <a href="platform.html">Platform</a>
+      <a href="ai.html">AI</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="company.html">Company</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <a href="contact.html" class="btn btn-accent">Request a Demo</a>
+      <label class="burger" for="menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></label>
     </div>
+  </div>
+</header>
 
-    <div class="nb-product-scene">
-      <div class="nb-orbit orbit-one"></div>
-      <div class="nb-orbit orbit-two"></div>
-      <div class="nb-product-frame">
-        <div class="topbar">
-          <div class="dots"><span></span><span></span><span></span></div>
-          <div class="winname">Northbridge Workspace</div>
-          <div class="winname">Connected</div>
+<main id="top">
+
+  <section style="border-top:none;">
+    <div class="wrap hero">
+      <div>
+        <p class="eyebrow"><span class="dot"></span>Company Operating System</p>
+        <h1>Stop asking five people where an order <mark>went.</mark></h1>
+        <p class="hero-sub measure">Northbridge unifies projects, people, workflows, approvals and documents into one workspace &mdash; configured around how your company already runs, not the other way around.</p>
+        <div class="hero-cta">
+          <a href="contact.html" class="btn btn-accent btn-pulse">Request a Demo</a>
+          <a href="platform.html" class="btn btn-outline">See how it works</a>
         </div>
-        <div class="app">
-          <aside class="sidebar">
-            <div class="sidebrand">NORTHBRIDGE</div>
-            <a class="active">Overview</a>
-            <a>Projects</a>
-            <a>People</a>
-            <a>Workflows</a>
-            <a>Approvals</a>
-            <a>Activity</a>
-            <a>Northbridge AI</a>
-          </aside>
-          <main class="content">
-            <div class="apphead"><span>Executive workspace</span><button>⌘K Search</button></div>
-            <h3>Good morning, Jack.</h3>
-            <div class="metrics">
-              <div class="metric"><span>Active projects</span><strong>34</strong><em>31 on track</em></div>
-              <div class="metric"><span>Pending approvals</span><strong>7</strong><em>3 urgent</em></div>
-              <div class="metric"><span>Open tasks</span><strong>126</strong><em>18 due soon</em></div>
-            </div>
-            <div class="chart">
-              <svg viewBox="0 0 700 220" preserveAspectRatio="none">
-                <defs>
-                  <linearGradient id="nbLineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                    <stop offset="0%" stop-color="#63d5ff"/>
-                    <stop offset="45%" stop-color="#7f9cff"/>
-                    <stop offset="75%" stop-color="#a98cff"/>
-                    <stop offset="100%" stop-color="#67e2b0"/>
-                  </linearGradient>
-                  <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stop-color="#7f9cff" stop-opacity=".22"/>
-                    <stop offset="100%" stop-color="#7f9cff" stop-opacity="0"/>
-                  </linearGradient>
-                </defs>
-                <path d="M0 180 C65 165 110 175 150 140 C205 95 245 122 300 98 C355 72 410 94 462 64 C520 30 575 58 625 34 C658 18 683 28 700 18 L700 220 L0 220Z" fill="url(#area)"/>
-                <path d="M0 180 C65 165 110 175 150 140 C205 95 245 122 300 98 C355 72 410 94 462 64 C520 30 575 58 625 34 C658 18 683 28 700 18" fill="none" stroke="url(#nbLineGradient)" stroke-width="3"/>
-              </svg>
-              <div class="pulse-dot"></div>
-            </div>
-            <div class="lower">
-              <div class="box">
-                <h4>Priority work</h4>
-                <div class="row"><span>Hosted backend</span><b>In progress</b></div>
-                <div class="row"><span>Customer pilot setup</span><b>Review</b></div>
-                <div class="row"><span>Workflow permissions</span><b>Testing</b></div>
-              </div>
-              <div class="box">
-                <h4>Northbridge AI</h4>
-                <div class="ai-chip">3 items need attention based on your authorized workspace data.</div>
-                <div class="row"><span>Approvals</span><b>7</b></div>
-                <div class="row"><span>Blocked</span><b>1</b></div>
-              </div>
-            </div>
-          </main>
-        </div>
+        <p class="rot-line mono">Configured for <span id="rotWord">furniture</span> teams &mdash; and however yours works.</p>
+      </div>
+      <div class="deck reveal pre" data-reveal id="deck">
+        <div class="deck-panel p1">Layer 01<b>People &amp; Permissions</b></div>
+        <div class="deck-panel p2">Layer 02<b>Projects &amp; Workflows</b></div>
+        <div class="deck-panel p3">Layer 03<b>Approvals &amp; Documents</b></div>
+        <div class="deck-panel p4">Layer 04<b>Activity &amp; Records</b></div>
+        <div class="deck-panel top">Converges as<b>One Workspace</b></div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<div class="signal-strip">
-  <div class="signal-track">
-    <span><b>Projects</b> connected</span><span><b>Permissions</b> verified</span><span><b>Workflows</b> active</span><span><b>Approvals</b> tracked</span><span><b>Activity</b> recorded</span><span><b>Northbridge AI</b> context-aware</span>
-    <span><b>Projects</b> connected</span><span><b>Permissions</b> verified</span><span><b>Workflows</b> active</span><span><b>Approvals</b> tracked</span><span><b>Activity</b> recorded</span><span><b>Northbridge AI</b> context-aware</span>
-  </div>
-</div>
+  <section>
+    <div class="wrap">
+      <p class="eyebrow"><span class="dot"></span>The Problem</p>
+      <p class="quote">&ldquo;When a customer asks where their order is, how many people do you have to ask before you can answer?&rdquo;</p>
+      <p class="measure" style="margin-top:1.5rem; font-size:1rem;">Most companies run on a patchwork of spreadsheets, group chats and half-updated tools. Nobody owns the full picture &mdash; so every question turns into a hunt across five people and three apps.</p>
+    </div>
+  </section>
 
-<section class="section" id="platform">
-  <div class="shell">
-    <div class="section-head reveal">
-      <div><div class="kicker">01 / Platform</div><h2>One operating layer for the company.</h2></div>
-      <p class="copy">Set up departments, roles, permissions, projects and workflows around the way your company already works. Northbridge gives leadership and teams one connected view without forcing a new operating model.</p>
-    </div>
-    <div class="cards">
-      <article class="card reveal"><small>Structure</small><h3>People & permissions</h3><p>Give each person the right view of the same company workspace.</p></article>
-      <article class="card reveal"><small>Execution</small><h3>Projects & workflows</h3><p>Track work from project to task to approval with a clear activity trail.</p></article>
-      <article class="card reveal"><small>Intelligence</small><h3>Northbridge AI</h3><p>Ask questions about authorized company data and open the records behind the answer.</p></article>
-    </div>
-  </div>
-</section>
-
-<section class="section darkband">
-  <div class="shell">
-    <div class="section-head reveal">
-      <div><div class="kicker">02 / Operating flow</div><h2>From work happening to work understood.</h2></div>
-      <p class="copy">Northbridge records company activity, applies roles and workflows, and turns that context into dashboards, approvals and useful AI-assisted answers.</p>
-    </div>
-    <div class="flow-demo reveal">
-      <div class="flow-steps">
-        <div class="step"><small>01</small><strong>Activity</strong></div>
-        <div class="step"><small>02</small><strong>Records</strong></div>
-        <div class="step"><small>03</small><strong>Permissions</strong></div>
-        <div class="step"><small>04</small><strong>Workflows</strong></div>
-        <div class="step"><small>05</small><strong>Dashboards</strong></div>
-        <div class="step"><small>06</small><strong>AI explains</strong></div>
+  <section style="border-bottom:none;">
+    <div class="wrap">
+      <p class="eyebrow"><span class="dot"></span>Find Your Way Around</p>
+      <h2>Northbridge, in four stops.</h2>
+      <div class="explore-grid">
+        <a class="explore-card" href="platform.html">
+          <span class="tag">01 / Platform</span>
+          <span class="t">The Workspace</span>
+          <span class="d">Projects, approvals, tasks &mdash; one operating layer.</span>
+        </a>
+        <a class="explore-card" href="ai.html">
+          <span class="tag">02 / AI</span>
+          <span class="t">Northbridge AI</span>
+          <span class="d">Ask what's happening. Get the context.</span>
+        </a>
+        <a class="explore-card" href="pricing.html">
+          <span class="tag">03 / Pricing</span>
+          <span class="t">Scoped Per Company</span>
+          <span class="d">No seat gimmicks &mdash; priced around how you work.</span>
+        </a>
+        <a class="explore-card" href="company.html">
+          <span class="tag">04 / Company</span>
+          <span class="t">Who's Building This</span>
+          <span class="d">Two founders, tired of bad internal tools.</span>
+        </a>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="section">
-  <div class="shell ai-grid">
-    <div class="reveal">
-      <div class="kicker">03 / Northbridge AI</div>
-      <h2>Ask what is happening. Get the context.</h2>
-      <p class="copy">Northbridge AI is designed to retrieve only records the signed-in user is allowed to access, then explain what changed and what needs attention.</p>
-      <div class="actions"><a class="btn" href="ai.html">Explore AI</a></div>
-    </div>
-    <div class="console reveal">
-      <div class="consolehead"><span>Northbridge AI</span><span>Authorized context</span></div>
-      <div class="consolebody">
-        <div class="prompt">What should I focus on today?</div>
-        <div class="answer">
-          <small>Executive brief</small>
-          <h4>Three things need attention.</h4>
-          <p>Two approvals are overdue, one workflow is blocked and a project milestone is approaching.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="cta">
-  <div class="shell ctabox reveal">
-    <div class="kicker">Start with your operating model</div>
-    <h2>Show us how your company works.</h2>
-    <p>We’ll shape Northbridge around your departments, workflows, permissions and project structure.</p>
-    <a class="btn primary" href="contact.html">Request a demo</a>
-  </div>
-</section>
-
-<footer><div class="shell foot"><div>© 2026 Northbridge</div><div>Software should fit the company. Not the other way around.</div></div></footer>
+</main>
+<footer class="finerow wrap" style="border-top:1px solid var(--line); margin-top:0;">
+  <span class="fine">&copy; 2026 Northbridge. Built by two people who got tired of bad internal tools.</span>
+  <nav>
+        <a href="platform.html">Platform</a>
+        <a href="ai.html">AI</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="company.html">Company</a>
+        <a href="contact.html">Contact</a>
+  </nav>
+</footer>
 <script src="script.js"></script>
 </body>
 </html>

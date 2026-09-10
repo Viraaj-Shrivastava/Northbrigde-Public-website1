@@ -1,129 +1,158 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#071e2d">
-    <meta name="description" content="Explore the Northbridge platform for company structure, permissions, projects, workflows, approvals, documents, and live dashboards.">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Platform — Northbridge">
-    <meta property="og:description" content="One configurable operating layer for structure, process, reporting, and authorized intelligence.">
-    <meta property="og:url" content="https://northbridge.in/platform.html">
-    <meta property="og:image" content="https://northbridge.in/assets/og.png">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Platform — Northbridge">
-    <meta name="twitter:description" content="One configurable operating layer for structure, process, reporting, and authorized intelligence.">
-    <meta name="twitter:image" content="https://northbridge.in/assets/og.png">
-    <link rel="canonical" href="https://northbridge.in/platform.html">
-    <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <script src="assets/js/main.js" defer></script>
-    <title>Platform — Northbridge</title>
-  </head>
-  <body>
-    <a class="skip-link" href="#main-content">Skip to content</a>
-    <header class="site-header">
-      <div class="container nav-row">
-        <a class="brand" href="index.html" aria-label="Northbridge home"><img class="brand-logo" src="assets/brand/northbridge-logo.svg" alt="Northbridge"></a>
-        <nav class="desktop-nav" aria-label="Primary navigation">
-          <a href="index.html">Home</a><a href="platform.html" aria-current="page">Platform</a><a href="solutions.html">Solutions</a><a href="ai.html">AI</a><a href="pricing.html">Pricing</a><a href="company.html">Company</a><a href="about.html">About Us</a><a href="contact.html">Contact</a>
-        </nav>
-        <a class="button button-primary nav-cta" href="contact.html">Request a conversation <span class="button-arrow" aria-hidden="true">↗</span></a>
-        <details class="mobile-menu" data-mobile-menu>
-          <summary aria-label="Open navigation" aria-expanded="false"><span class="menu-icon" aria-hidden="true"></span></summary>
-          <nav class="mobile-menu-panel" aria-label="Mobile navigation"><a href="index.html">Home</a><a href="platform.html" aria-current="page">Platform</a><a href="solutions.html">Solutions</a><a href="ai.html">AI</a><a href="pricing.html">Pricing</a><a href="company.html">Company</a><a href="about.html">About Us</a><a href="contact.html">Contact</a></nav>
-        </details>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Platform — Northbridge</title>
+<meta name="description" content="One operating layer for the company: projects, approvals, tasks and people, shown the way your company actually organizes them.">
+<meta name="theme-color" content="#0F0F11">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<input type="checkbox" id="menu-toggle">
+
+<div class="bg-fx" aria-hidden="true"><div class="orb orb-a"></div><div class="orb orb-b"></div></div>
+<div class="grid-overlay" aria-hidden="true"></div>
+<header class="nav">
+  <div class="wrap nav-row">
+    <a href="index.html" class="wordmark">
+      <svg width="30" height="30" viewBox="0 0 128 128" fill="none" aria-hidden="true">
+        <rect width="128" height="128" rx="28" fill="#121214"></rect>
+        <rect x="30" y="40" width="13" height="54" rx="6.5" fill="#C9FF4D"></rect>
+        <rect x="85" y="40" width="13" height="54" rx="6.5" fill="#C9FF4D"></rect>
+        <rect x="26" y="88" width="76" height="11" rx="5.5" fill="#C9FF4D"></rect>
+        <path d="M37 46C37 30 50 20 64 20C78 20 91 30 91 46" stroke="#C9FF4D" stroke-width="10" stroke-linecap="round"></path>
+        <circle cx="64" cy="20" r="7.5" fill="#FF3EA5"></circle>
+      </svg>
+      NORTHBRIDGE
+    </a>
+    <nav class="links" id="navLinks">
+      <a href="platform.html" class="active" aria-current="page">Platform</a>
+      <a href="ai.html">AI</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="company.html">Company</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <a href="contact.html" class="btn btn-accent">Request a Demo</a>
+      <label class="burger" for="menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></label>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="page-head" style="border-top:none;">
+    <div class="wrap">
+      <p class="eyebrow"><span class="dot"></span>Platform</p>
+      <h1>One operating layer for the company.</h1>
+      <p class="measure">Everything your teams already track &mdash; projects, approvals, tasks, people &mdash; shown the way your company actually organizes it, not the way a generic tool assumes.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <p class="eyebrow"><span class="dot"></span>The Workspace</p>
+      <h2>Workspace overview, live.</h2>
+      <div class="panel reveal pre" data-reveal style="margin-top:2.3rem;">
+        <div class="panel-head">
+          <span>WORKSPACE OVERVIEW &mdash; ACME LOGISTICS <span style="opacity:.6;">(illustrative)</span></span>
+        </div>
+        <div class="metrics">
+          <div class="metric"><div class="num" data-target="34">0</div><div class="lbl">Active Projects</div></div>
+          <div class="metric"><div class="num" data-target="7">0</div><div class="lbl">Pending Approvals</div></div>
+          <div class="metric"><div class="num" data-target="126">0</div><div class="lbl">Open Tasks</div></div>
+        </div>
+        <table class="rows">
+          <thead><tr><th>Project</th><th>Owner</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>Whitmore Install &mdash; Phase 2</td><td>D. Reyes</td><td><span class="chip chip-warn">At Risk</span></td></tr>
+            <tr><td>Carter Fit-Out</td><td>S. Okafor</td><td><span class="chip chip-good">On Track</span></td></tr>
+            <tr><td>Regional Warehouse Audit</td><td>M. Lindgren</td><td><span class="chip chip-bad">Blocked</span></td></tr>
+            <tr><td>Q3 Vendor Onboarding</td><td>A. Patel</td><td><span class="chip chip-good">On Track</span></td></tr>
+          </tbody>
+        </table>
       </div>
-    </header>
+    </div>
+  </section>
 
-    <main id="main-content">
-      <section class="page-hero">
-        <div class="container page-hero-grid">
-          <div>
-            <p class="eyebrow">The Northbridge platform</p>
-            <h1 class="page-title">Configured around you, not the other way around.</h1>
-            <p class="lede">Northbridge models how your company is structured, how work moves, who can see what, and what leaders need to know—then connects it all in one adaptable environment.</p>
-            <div class="button-row"><a class="button button-primary" href="contact.html">Discuss your operating model <span class="button-arrow" aria-hidden="true">↗</span></a></div>
-          </div>
-          <div class="page-aside" aria-label="Platform layers">
-            <div class="page-aside-item"><span>01</span><div><strong>Structure</strong><small>Teams, roles, reporting lines, and permission boundaries.</small></div></div>
-            <div class="page-aside-item"><span>02</span><div><strong>Process</strong><small>Projects, queues, approvals, documents, and repeatable workflows.</small></div></div>
-            <div class="page-aside-item"><span>03</span><div><strong>Reporting</strong><small>Live operational views built from the work itself.</small></div></div>
-          </div>
+  <section>
+    <div class="wrap">
+      <p class="eyebrow"><span class="dot"></span>Core Features</p>
+      <h2>Built from three layers, used as one.</h2>
+      <div class="feature-grid">
+        <div class="feature">
+          <div class="num">01</div>
+          <h3>People &amp; Permissions</h3>
+          <p>Role-based access so the right person sees the right thing across the org &mdash; nothing more, nothing hidden.</p>
         </div>
-      </section>
-
-      <section class="section section-paper">
-        <div class="container">
-          <div class="section-head">
-            <div><p class="eyebrow">Platform modules</p><h2 class="section-title">The operating layer beneath everyday work.</h2></div>
-            <p>Each module shares the same company model, so ownership, access, activity, and reporting remain connected instead of being rebuilt in every tool.</p>
-          </div>
-          <div class="module-grid">
-            <article class="module-card"><span class="module-icon">OS</span><div><h3>Organization model</h3><p>Represent departments, teams, users, roles, and reporting relationships as the foundation of the workspace.</p><div class="module-meta"><span>Teams</span><span>Roles</span><span>Reporting</span></div></div></article>
-            <article class="module-card"><span class="module-icon">P</span><div><h3>Permissions</h3><p>Define access around real responsibility so records, queues, dashboards, and AI inherit the right boundaries.</p><div class="module-meta"><span>Roles</span><span>Scope</span><span>Access</span></div></div></article>
-            <article class="module-card"><span class="module-icon">W</span><div><h3>Projects &amp; workflows</h3><p>Turn recurring work into clear stages with owners, handoffs, deadlines, and escalation paths.</p><div class="module-meta"><span>Owners</span><span>Stages</span><span>Handoffs</span></div></div></article>
-            <article class="module-card"><span class="module-icon">A</span><div><h3>Approvals</h3><p>Route decisions to the right people, preserve the reasoning, and keep an auditable history attached to the work.</p><div class="module-meta"><span>Thresholds</span><span>History</span><span>Controls</span></div></div></article>
-            <article class="module-card"><span class="module-icon">D</span><div><h3>Documents &amp; context</h3><p>Keep source material, decisions, comments, and activity with the record instead of scattered across separate channels.</p><div class="module-meta"><span>Files</span><span>History</span><span>Context</span></div></div></article>
-            <article class="module-card"><span class="module-icon">BI</span><div><h3>Live dashboards</h3><p>Give teams and leaders the views they need from current operational data—without rebuilding reports by hand.</p><div class="module-meta"><span>Summary</span><span>Drill-down</span><span>Current</span></div></div></article>
-          </div>
+        <div class="feature">
+          <div class="num">02</div>
+          <h3>Projects &amp; Workflows</h3>
+          <p>Every task, approval and status change is tracked, so nothing depends on someone remembering to update a chat.</p>
         </div>
-      </section>
-
-      <section class="section section-navy">
-        <div class="container connection-panel">
-          <div>
-            <p class="eyebrow">Context stays attached</p>
-            <h2 class="section-title">Every record carries the full story.</h2>
-            <p class="lede lede-light">A task is more than a checkbox. It retains the project, owner, status, documents, approvals, decisions, and activity required to understand what happened and what should happen next.</p>
-          </div>
-          <div class="record-card" aria-label="Example connected task record">
-            <div class="record-header"><strong>Client rollout</strong><span class="record-status">In review</span></div>
-            <ul class="record-list">
-              <li><span>Owner</span><strong>Operations</strong></li>
-              <li><span>Next decision</span><strong>Leadership approval</strong></li>
-              <li><span>Sources</span><strong>Brief · plan · activity</strong></li>
-              <li><span>Visibility</span><strong>Role-based</strong></li>
-            </ul>
-          </div>
+        <div class="feature">
+          <div class="num">03</div>
+          <h3>Northbridge AI</h3>
+          <p>Answers questions using only the data a person is authorized to see. <a href="ai.html" style="color:var(--lime); text-decoration:underline;">See how &rarr;</a></p>
         </div>
-      </section>
+      </div>
+    </div>
+  </section>
 
-      <section class="section">
-        <div class="container">
-          <div class="section-head">
-            <div><p class="eyebrow">How configuration works</p><h2 class="section-title">Map the business before mapping the software.</h2></div>
-            <p>Northbridge begins with the way your company actually operates, then translates that model into a working environment.</p>
-          </div>
-          <div class="process-track">
-            <article class="process-step"><span>01</span><h3>Structure</h3><p>Define departments, roles, reporting lines, and the responsibilities that shape access.</p></article>
-            <article class="process-step"><span>02</span><h3>Process</h3><p>Map project types, workflows, approvals, exceptions, and the handoffs between teams.</p></article>
-            <article class="process-step"><span>03</span><h3>Reporting</h3><p>Build operational and leadership views from the live records created by the work.</p></article>
-          </div>
+  <section>
+    <div class="wrap">
+      <p class="eyebrow"><span class="dot"></span>How It Flows</p>
+      <h2>From activity to answer, in one line.</h2>
+      <div class="flow reveal pre" data-reveal>
+        <div class="flow-pulse" aria-hidden="true"></div>
+        <div class="flow-step"><div class="flow-line"></div><div class="flow-dot"></div><div class="n">01</div><div class="t">Activity</div></div>
+        <div class="flow-step"><div class="flow-line"></div><div class="flow-dot"></div><div class="n">02</div><div class="t">Records</div></div>
+        <div class="flow-step"><div class="flow-line"></div><div class="flow-dot"></div><div class="n">03</div><div class="t">Permissions</div></div>
+        <div class="flow-step"><div class="flow-line"></div><div class="flow-dot"></div><div class="n">04</div><div class="t">Workflows</div></div>
+        <div class="flow-step"><div class="flow-line"></div><div class="flow-dot"></div><div class="n">05</div><div class="t">Dashboards</div></div>
+        <div class="flow-step"><div class="flow-line"></div><div class="flow-dot"></div><div class="n">06</div><div class="t">AI Explains</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="border-bottom:none;">
+    <div class="wrap">
+      <p class="eyebrow"><span class="dot"></span>Why Northbridge</p>
+      <h2>Same source of truth. Every level.</h2>
+      <p class="measure" style="margin-top:.9rem; font-size:1rem;">Most companies stitch together spreadsheets, chats and single-purpose tools that don't talk to each other. Northbridge replaces the stitching with one configurable workspace everyone reads from.</p>
+      <div class="why-grid">
+        <div class="why-col before">
+          <h4>Without Northbridge</h4>
+          <ul>
+            <li>Status lives in five different group chats</li>
+            <li>Approvals tracked over email threads</li>
+            <li>Every new hire gets a different tool stack</li>
+            <li>&ldquo;Let me check and get back to you&rdquo;</li>
+          </ul>
         </div>
-      </section>
-
-      <section class="section section-paper section-top-line">
-        <div class="container split">
-          <div><p class="eyebrow">Designed to scale in detail</p><h2 class="section-title">From summary to source record.</h2></div>
-          <div class="body-copy"><p>Northbridge keeps complex organizations navigable through a consistent path: summary, category, list, and individual record. Leaders can start with the whole company while operators can move directly into the work that needs attention.</p><p>The same model supports many departments and workflows without forcing every person to see the same interface—or more information than their role permits.</p><a class="text-link" href="solutions.html">Explore solutions by function <span aria-hidden="true">↗</span></a></div>
+        <div class="why-col now">
+          <h4>With Northbridge</h4>
+          <ul>
+            <li>One workspace, live activity, one truth</li>
+            <li>Approvals routed and logged automatically</li>
+            <li>Access configured by role, not tribal knowledge</li>
+            <li>&ldquo;Here's exactly where it stands&rdquo;</li>
+          </ul>
         </div>
-      </section>
-
-      <section class="section">
-        <div class="container cta-panel">
-          <div><p class="eyebrow">Built around your company</p><h2 class="quote-title">Same operating layer. Your configuration.</h2><p>Show us how responsibility and work move today. We will show you how Northbridge can connect them.</p></div>
-          <div class="button-row"><a class="button button-gold" href="contact.html">Start a conversation <span class="button-arrow" aria-hidden="true">↗</span></a></div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container"><div class="footer-grid">
-        <div class="footer-intro"><a class="brand" href="index.html"><img class="brand-logo" src="assets/brand/northbridge-logo.svg" alt="Northbridge"></a><p>AI-native operating infrastructure for modern companies.</p></div>
-        <nav class="footer-links" aria-label="Footer navigation"><span class="footer-title">Explore</span><a href="platform.html">Platform</a><a href="solutions.html">Solutions</a><a href="ai.html">AI</a><a href="pricing.html">Pricing</a><a href="company.html">Company</a><a href="about.html">About Us</a><a href="contact.html">Contact</a></nav>
-        <div class="footer-contacts"><span class="footer-title">Leadership</span><a href="mailto:YuvaanChadhary@northbrigde.in">YuvaanChadhary@northbrigde.in</a><a href="mailto:ViraajShrivastava@northbrigde.in">ViraajShrivastava@northbrigde.in</a></div>
-      </div><div class="footer-bottom"><span>© <span data-year>2026</span> Northbridge. All rights reserved.</span><span>Configured around you, not the other way around.</span></div></div>
-    </footer>
-  </body>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="finerow wrap" style="border-top:1px solid var(--line); margin-top:0;">
+  <span class="fine">&copy; 2026 Northbridge. Built by two people who got tired of bad internal tools.</span>
+  <nav>
+        <a href="platform.html">Platform</a>
+        <a href="ai.html">AI</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="company.html">Company</a>
+        <a href="contact.html">Contact</a>
+  </nav>
+</footer>
+<script src="script.js"></script>
+</body>
 </html>

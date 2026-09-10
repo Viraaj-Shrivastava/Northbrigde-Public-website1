@@ -1,39 +1,72 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Contact — Northbridge</title><link rel="stylesheet" href="styles.css"><link rel="icon" href="favicon.ico">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-<link rel="manifest" href="site.webmanifest">
-</head><body>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Northbridge</title>
+<meta name="description" content="Talk to Northbridge about how your company works, and see what it looks like configured for your team.">
+<meta name="theme-color" content="#0F0F11">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<input type="checkbox" id="menu-toggle">
 
-<div class="nav">
-  <a class="brand" href="index.html">NORTH<b>BRIDGE</b></a>
-  <div class="navlinks">
-    <a href="index.html#platform">Platform</a>
-    <a href="ai.html">AI</a>
-    <a href="pricing.html">Pricing</a>
-    <a href="company.html">Company</a>
-    <a href="contact.html">Contact</a>
-    <a class="nav-cta" href="contact.html">Request a demo</a>
+<div class="bg-fx" aria-hidden="true"><div class="orb orb-a"></div><div class="orb orb-b"></div></div>
+<div class="grid-overlay" aria-hidden="true"></div>
+<header class="nav">
+  <div class="wrap nav-row">
+    <a href="index.html" class="wordmark">
+      <svg width="30" height="30" viewBox="0 0 128 128" fill="none" aria-hidden="true">
+        <rect width="128" height="128" rx="28" fill="#121214"></rect>
+        <rect x="30" y="40" width="13" height="54" rx="6.5" fill="#C9FF4D"></rect>
+        <rect x="85" y="40" width="13" height="54" rx="6.5" fill="#C9FF4D"></rect>
+        <rect x="26" y="88" width="76" height="11" rx="5.5" fill="#C9FF4D"></rect>
+        <path d="M37 46C37 30 50 20 64 20C78 20 91 30 91 46" stroke="#C9FF4D" stroke-width="10" stroke-linecap="round"></path>
+        <circle cx="64" cy="20" r="7.5" fill="#FF3EA5"></circle>
+      </svg>
+      NORTHBRIDGE
+    </a>
+    <nav class="links" id="navLinks">
+      <a href="platform.html">Platform</a>
+      <a href="ai.html">AI</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="company.html">Company</a>
+      <a href="contact.html" class="active" aria-current="page">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <a href="contact.html" class="btn btn-accent">Request a Demo</a>
+      <label class="burger" for="menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></label>
+    </div>
   </div>
-</div>
-<section class="pagehero"><div class="shell"><div class="kicker">Contact</div><h1>Show us how<br><span class="gradient">your company works.</span></h1><p>Tell us about the workflows, people and information your team has to manage.</p></div></section>
-<section class="section" style="padding-top:20px"><div class="shell contactgrid"><div><div class="kicker">Start a conversation</div><h2>Request a demo.</h2><p class="copy">We can configure a Northbridge workspace around the way your team already operates.</p></div>
-<form onsubmit="event.preventDefault(); alert('Connect this form to your backend or form provider before launch.');"><label>Name</label><input required placeholder="Your name"><label>Company</label><input placeholder="Company name"><label>Email</label><input type="email" required placeholder="you@company.com"><label>What should Northbridge help with?</label><textarea placeholder="Projects, workflows, approvals, reporting..."></textarea><button class="btn primary" type="submit">Request a demo</button></form>
-</div>
-<div class="contact-emails reveal">
-  <div>
-    <span>Yuvaan — Founder / CEO / Director / CFO</span>
-    <a href="mailto:YuvaanChaudhary@northbrigde.in">YuvaanChaudhary@northbrigde.in</a>
-  </div>
-  <div>
-    <span>Viraaj — CTO / COO</span>
-    <a href="mailto:Viraajsrivastava@northbrigde.in">Viraajsrivastava@northbrigde.in</a>
-  </div>
-</div>
-</section>
-<footer><div class="shell foot">
-<div>© 2026 Northbridge</div>
-<div>Software should fit the company. Not the other way around.</div>
-</div></footer>
+</header>
+
+<main>
+  <section class="close-band" style="border-top:none; padding-top:clamp(3.4rem,8vw,6.5rem);">
+    <div class="wrap">
+      <div class="cta-inner reveal pre" data-reveal style="border-bottom:none; padding-bottom:0;">
+        <div>
+          <p class="eyebrow"><span class="dot"></span>Get Started</p>
+          <h1>Show us how your company works.</h1>
+          <p class="measure" style="margin-top:.9rem; font-size:1rem;">Walk us through your departments, project types and workflows. We'll show you what it looks like inside Northbridge &mdash; configured around your company, not the other way around.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="mailto:info@northbrigde.in" class="btn btn-accent btn-pulse">Request a Demo</a>
+          <a href="mailto:info@northbrigde.in" class="email">info@northbrigde.in</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="finerow wrap" style="border-top:1px solid var(--line); margin-top:0;">
+  <span class="fine">&copy; 2026 Northbridge. Built by two people who got tired of bad internal tools.</span>
+  <nav>
+        <a href="platform.html">Platform</a>
+        <a href="ai.html">AI</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="company.html">Company</a>
+        <a href="contact.html">Contact</a>
+  </nav>
+</footer>
 <script src="script.js"></script>
-</body></html>
+</body>
+</html>
